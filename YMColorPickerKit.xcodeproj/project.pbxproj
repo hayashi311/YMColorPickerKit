@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAD014FF159612F300A76877 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD014FE159612F300A76877 /* UIKit.framework */; };
+		DAD01501159612F300A76877 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD01500159612F300A76877 /* Foundation.framework */; };
+		DAD01503159612F300A76877 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD01502159612F300A76877 /* CoreGraphics.framework */; };
+		DAD01509159612F300A76877 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAD01507159612F300A76877 /* InfoPlist.strings */; };
+		DAD0150B159612F300A76877 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD0150A159612F300A76877 /* main.m */; };
+		DAD0150F159612F300A76877 /* YMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD0150E159612F300A76877 /* YMAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DAD014FA159612F300A76877 /* YMColorPickerKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMColorPickerKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD014FE159612F300A76877 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DAD01500159612F300A76877 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DAD01502159612F300A76877 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DAD01506159612F300A76877 /* YMColorPickerKit-Info.plist */ = {isa = PBXFileReference; path = "YMColorPickerKit-Info.plist"; sourceTree = "<group>"; };
+		DAD01508159612F300A76877 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DAD0150A159612F300A76877 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAD0150C159612F300A76877 /* YMColorPickerKit-Prefix.pch */ = {isa = PBXFileReference; path = "YMColorPickerKit-Prefix.pch"; sourceTree = "<group>"; };
+		DAD0150D159612F300A76877 /* YMAppDelegate.h */ = {isa = PBXFileReference; path = YMAppDelegate.h; sourceTree = "<group>"; };
+		DAD0150E159612F300A76877 /* YMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAD014F7159612F300A76877 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD014FF159612F300A76877 /* UIKit.framework in Frameworks */,
+				DAD01501159612F300A76877 /* Foundation.framework in Frameworks */,
+				DAD01503159612F300A76877 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAD014EF159612F300A76877 = {
+			isa = PBXGroup;
+			children = (
+				DAD01504159612F300A76877 /* YMColorPickerKit */,
+				DAD014FD159612F300A76877 /* Frameworks */,
+				DAD014FB159612F300A76877 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAD014FB159612F300A76877 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAD014FA159612F300A76877 /* YMColorPickerKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAD014FD159612F300A76877 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAD014FE159612F300A76877 /* UIKit.framework */,
+				DAD01500159612F300A76877 /* Foundation.framework */,
+				DAD01502159612F300A76877 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAD01504159612F300A76877 /* YMColorPickerKit */ = {
+			isa = PBXGroup;
+			children = (
+				DAD0150D159612F300A76877 /* YMAppDelegate.h */,
+				DAD0150E159612F300A76877 /* YMAppDelegate.m */,
+				DAD01505159612F300A76877 /* Supporting Files */,
+			);
+			path = YMColorPickerKit;
+			sourceTree = "<group>";
+		};
+		DAD01505159612F300A76877 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAD01506159612F300A76877 /* YMColorPickerKit-Info.plist */,
+				DAD01507159612F300A76877 /* InfoPlist.strings */,
+				DAD0150A159612F300A76877 /* main.m */,
+				DAD0150C159612F300A76877 /* YMColorPickerKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAD014F9159612F300A76877 /* YMColorPickerKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD01512159612F300A76877 /* Build configuration list for PBXNativeTarget "YMColorPickerKit" */;
+			buildPhases = (
+				DAD014F6159612F300A76877 /* Sources */,
+				DAD014F7159612F300A76877 /* Frameworks */,
+				DAD014F8159612F300A76877 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YMColorPickerKit;
+			productName = YMColorPickerKit;
+			productReference = DAD014FA159612F300A76877 /* YMColorPickerKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAD014F1159612F300A76877 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Hayashi Ryota";
+			};
+			buildConfigurationList = DAD014F4159612F300A76877 /* Build configuration list for PBXProject "YMColorPickerKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DAD014EF159612F300A76877;
+			productRefGroup = DAD014FB159612F300A76877 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAD014F9159612F300A76877 /* YMColorPickerKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAD014F8159612F300A76877 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD01509159612F300A76877 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAD014F6159612F300A76877 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD0150B159612F300A76877 /* main.m in Sources */,
+				DAD0150F159612F300A76877 /* YMAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DAD01507159612F300A76877 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAD01508159612F300A76877 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAD01510159612F300A76877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DAD01511159612F300A76877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAD01513159612F300A76877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YMColorPickerKit/YMColorPickerKit-Prefix.pch";
+				INFOPLIST_FILE = "YMColorPickerKit/YMColorPickerKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DAD01514159612F300A76877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YMColorPickerKit/YMColorPickerKit-Prefix.pch";
+				INFOPLIST_FILE = "YMColorPickerKit/YMColorPickerKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAD014F4159612F300A76877 /* Build configuration list for PBXProject "YMColorPickerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD01510159612F300A76877 /* Debug */,
+				DAD01511159612F300A76877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAD01512159612F300A76877 /* Build configuration list for PBXNativeTarget "YMColorPickerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD01513159612F300A76877 /* Debug */,
+				DAD01514159612F300A76877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAD014F1159612F300A76877 /* Project object */;
+}
