@@ -1,0 +1,45 @@
+//
+//  UIColor+YMColor.h
+//  YMColorPickerKit
+//
+//  Created by 林 亮太 on 12/06/24.
+//  Copyright (c) 2012 Hayashi Ryota. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "YMColor.h"
+
+@interface UIColor (YMColor)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// YMColor from UIColor
+//
+/////////////////////////////////////////////////////////////////////////////
+#pragma mark - YMColor
+
+- (YMRGBAColor)YMRGBAColor;
+- (YMHSVAColor)YMHSVAColor;
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HexColorString(@"#FFFFFF",etc) and UIColor
+//
+/////////////////////////////////////////////////////////////////////////////
+#pragma mark - HexColorString
+
++ (BOOL)ym_isValidHexColorString:(NSString*)hexColorString;
++ (UIColor*)ym_colorWithHexColorString:(NSString*)hexColorString;
+
+- (NSString*)ym_hexColorString;
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Adjust brightness
+//
+/////////////////////////////////////////////////////////////////////////////
+#pragma mark - brightness
+
+- (UIColor*)ym_colorByAddingBrightness:(float)brightness;
+
+@end
