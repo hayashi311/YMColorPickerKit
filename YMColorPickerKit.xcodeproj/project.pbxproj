@@ -20,11 +20,11 @@
 		DAD014FE159612F300A76877 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DAD01500159612F300A76877 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DAD01502159612F300A76877 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DAD01506159612F300A76877 /* YMColorPickerKit-Info.plist */ = {isa = PBXFileReference; path = "YMColorPickerKit-Info.plist"; sourceTree = "<group>"; };
+		DAD01506159612F300A76877 /* YMColorPickerKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YMColorPickerKit-Info.plist"; sourceTree = "<group>"; };
 		DAD01508159612F300A76877 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DAD0150A159612F300A76877 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DAD0150C159612F300A76877 /* YMColorPickerKit-Prefix.pch */ = {isa = PBXFileReference; path = "YMColorPickerKit-Prefix.pch"; sourceTree = "<group>"; };
-		DAD0150D159612F300A76877 /* YMAppDelegate.h */ = {isa = PBXFileReference; path = YMAppDelegate.h; sourceTree = "<group>"; };
+		DAD0150C159612F300A76877 /* YMColorPickerKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YMColorPickerKit-Prefix.pch"; sourceTree = "<group>"; };
+		DAD0150D159612F300A76877 /* YMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAppDelegate.h; sourceTree = "<group>"; };
 		DAD0150E159612F300A76877 /* YMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
