@@ -44,6 +44,8 @@ extern "C" {
     
     YMHSVAColor YMHSVAColorMake(float hue,float saturation,float brightness,float alpha);
     
+    YMHSVAColor YMHSVAClearColor();
+    
     /////////////////////////////////////////////////////////////////////////////
     //
     // Convert color 

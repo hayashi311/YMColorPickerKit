@@ -12,6 +12,10 @@
 		DA54D5561596DA5F0039F16F /* YMColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA54D5551596DA5F0039F16F /* YMColorPickerView.m */; };
 		DA54D55A1596DA780039F16F /* YMColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA54D5591596DA780039F16F /* YMColorPickerViewController.m */; };
 		DA8ED03B1596EA4500952611 /* YMColorPickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8ED03A1596EA4500952611 /* YMColorPickerManager.m */; };
+		DAABA7F01597021A00E63941 /* YMColorInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAABA7EF1597021A00E63941 /* YMColorInfoView.m */; };
+		DAABA7F315970D5500E63941 /* YMBrightnessSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = DAABA7F215970D5500E63941 /* YMBrightnessSlider.m */; };
+		DAABA7F6159711E300E63941 /* HRBrightnessCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = DAABA7F5159711E300E63941 /* HRBrightnessCursor.m */; };
+		DAABA7F91597120300E63941 /* HRCgUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DAABA7F81597120200E63941 /* HRCgUtil.m */; };
 		DAD014FF159612F300A76877 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD014FE159612F300A76877 /* UIKit.framework */; };
 		DAD01501159612F300A76877 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD01500159612F300A76877 /* Foundation.framework */; };
 		DAD01503159612F300A76877 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD01502159612F300A76877 /* CoreGraphics.framework */; };
@@ -32,6 +36,14 @@
 		DA8ED0391596EA4500952611 /* YMColorPickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMColorPickerManager.h; sourceTree = "<group>"; };
 		DA8ED03A1596EA4500952611 /* YMColorPickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMColorPickerManager.m; sourceTree = "<group>"; };
 		DA8ED03E1596F36E00952611 /* YMColorPickerControlProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMColorPickerControlProtocol.h; sourceTree = "<group>"; };
+		DAABA7EE1597021A00E63941 /* YMColorInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMColorInfoView.h; sourceTree = "<group>"; };
+		DAABA7EF1597021A00E63941 /* YMColorInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMColorInfoView.m; sourceTree = "<group>"; };
+		DAABA7F115970D5500E63941 /* YMBrightnessSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMBrightnessSlider.h; sourceTree = "<group>"; };
+		DAABA7F215970D5500E63941 /* YMBrightnessSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMBrightnessSlider.m; sourceTree = "<group>"; };
+		DAABA7F4159711E300E63941 /* HRBrightnessCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRBrightnessCursor.h; sourceTree = "<group>"; };
+		DAABA7F5159711E300E63941 /* HRBrightnessCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRBrightnessCursor.m; sourceTree = "<group>"; };
+		DAABA7F71597120200E63941 /* HRCgUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRCgUtil.h; sourceTree = "<group>"; };
+		DAABA7F81597120200E63941 /* HRCgUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRCgUtil.m; sourceTree = "<group>"; };
 		DAD014FA159612F300A76877 /* YMColorPickerKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMColorPickerKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD014FE159612F300A76877 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DAD01500159612F300A76877 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,6 +73,7 @@
 		DA54D5401596A56E0039F16F /* YMColorPickerKit */ = {
 			isa = PBXGroup;
 			children = (
+				DAABA7EC1597020100E63941 /* controles */,
 				DA54D5411596A56E0039F16F /* UIColor+YMColor.h */,
 				DA54D5421596A56E0039F16F /* UIColor+YMColor.m */,
 				DA54D5431596A56E0039F16F /* YMColor.h */,
@@ -74,6 +87,21 @@
 				DA54D5591596DA780039F16F /* YMColorPickerViewController.m */,
 			);
 			path = YMColorPickerKit;
+			sourceTree = "<group>";
+		};
+		DAABA7EC1597020100E63941 /* controles */ = {
+			isa = PBXGroup;
+			children = (
+				DAABA7F4159711E300E63941 /* HRBrightnessCursor.h */,
+				DAABA7F5159711E300E63941 /* HRBrightnessCursor.m */,
+				DAABA7F71597120200E63941 /* HRCgUtil.h */,
+				DAABA7F81597120200E63941 /* HRCgUtil.m */,
+				DAABA7EE1597021A00E63941 /* YMColorInfoView.h */,
+				DAABA7EF1597021A00E63941 /* YMColorInfoView.m */,
+				DAABA7F115970D5500E63941 /* YMBrightnessSlider.h */,
+				DAABA7F215970D5500E63941 /* YMBrightnessSlider.m */,
+			);
+			path = controles;
 			sourceTree = "<group>";
 		};
 		DAD014EF159612F300A76877 = {
@@ -194,6 +222,10 @@
 				DA54D5561596DA5F0039F16F /* YMColorPickerView.m in Sources */,
 				DA54D55A1596DA780039F16F /* YMColorPickerViewController.m in Sources */,
 				DA8ED03B1596EA4500952611 /* YMColorPickerManager.m in Sources */,
+				DAABA7F01597021A00E63941 /* YMColorInfoView.m in Sources */,
+				DAABA7F315970D5500E63941 /* YMBrightnessSlider.m in Sources */,
+				DAABA7F6159711E300E63941 /* HRBrightnessCursor.m in Sources */,
+				DAABA7F91597120300E63941 /* HRCgUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

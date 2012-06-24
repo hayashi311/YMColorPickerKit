@@ -8,6 +8,9 @@
 
 #import "YMColorPickerView.h"
 #import "YMColorPickerManager.h"
+#import "UIColor+YMColor.h"
+#import "YMColorInfoView.h"
+#import "YMBrightnessSlider.h"
 
 @interface YMColorPickerView() {
 @private
@@ -26,7 +29,18 @@
     self = [super initWithFrame:frame];
     if (self) {
         manager_ = [[YMColorPickerManager alloc] init];
+        [manager_ updateHSVAColor:[UIColor greenColor].YMHSVAColor];
         self.backgroundColor = [UIColor redColor];
+        
+        YMColorInfoView* infoView = [[YMColorInfoView alloc] initWithFrame:CGRectMake(10.f, 10.f, 30.f, 30.f)];
+        [manager_ addControl:infoView];
+        [self addSubview:infoView];
+        
+        YMBrightnessSlider* brightnessSlider;
+        brightnessSlider = [[YMBrightnessSlider alloc] initWithFrame:CGRectMake(50.f, 10.f, 200.f, 30.f)];
+        [manager_ addControl:brightnessSlider];
+        [self addSubview:brightnessSlider];
+        
     }
     return self;
 }

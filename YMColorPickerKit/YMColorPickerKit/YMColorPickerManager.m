@@ -11,6 +11,7 @@
 @interface YMColorPickerManager() {
 @private
     NSMutableArray* controles_;
+    YMHSVAColor hsva_;
 }
 @end
 
@@ -21,6 +22,7 @@
     self = [super init];
     if (self) {
         controles_ = [NSMutableArray array];
+        hsva_ = YMHSVAClearColor();
     }
     return self;
 }
@@ -28,14 +30,16 @@
 - (void)addControl:(UIView<YMColorPickerControlProtocol>*)control
 {
     [control setManager:self];
+    [control setHSVAColor:hsva_];
     [controles_ addObject:control];
 }
 
 - (void)updateHSVAColor:(YMHSVAColor)hsva
 {
+    hsva_ = hsva;
     for (UIView<YMColorPickerControlProtocol>* control in controles_) {
-        if (!YMHSVAColorEqualToColor([control HSVAColor], hsva)) {
-            [control setHSVAColor:hsva];
+        if (!YMHSVAColorEqualToColor([control HSVAColor], hsva_)) {
+            [control setHSVAColor:hsva_];
         }
     }
 }

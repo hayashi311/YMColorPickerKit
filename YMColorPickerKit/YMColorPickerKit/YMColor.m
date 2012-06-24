@@ -8,7 +8,6 @@
 
 #import "YMColor.h"
 
-
 YMRGBAColor YMRGBAColorMake(float red,float green,float blue,float alpha)
 {
     YMRGBAColor rgba;
@@ -42,6 +41,16 @@ YMHSVAColor YMHSVAColorMake(float hue,float saturation,float brightness,float al
     hsva.a = fminf(alpha, 1.f);
     hsva.a = fmaxf(hsva.a, 0.f);
     
+    return  hsva;
+}
+
+YMHSVAColor YMHSVAClearColor()
+{
+    YMHSVAColor hsva;
+    hsva.h = 0.f;
+    hsva.s = 0.f;
+    hsva.v = 0.f;
+    hsva.a = 0.f;
     return  hsva;
 }
 
