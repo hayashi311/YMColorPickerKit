@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA54D5451596A56E0039F16F /* UIColor+YMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DA54D5421596A56E0039F16F /* UIColor+YMColor.m */; };
+		DA54D5461596A56E0039F16F /* YMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DA54D5441596A56E0039F16F /* YMColor.m */; };
 		DAD014FF159612F300A76877 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD014FE159612F300A76877 /* UIKit.framework */; };
 		DAD01501159612F300A76877 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD01500159612F300A76877 /* Foundation.framework */; };
 		DAD01503159612F300A76877 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD01502159612F300A76877 /* CoreGraphics.framework */; };
 		DAD01509159612F300A76877 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAD01507159612F300A76877 /* InfoPlist.strings */; };
 		DAD0150B159612F300A76877 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD0150A159612F300A76877 /* main.m */; };
 		DAD0150F159612F300A76877 /* YMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD0150E159612F300A76877 /* YMAppDelegate.m */; };
-		DAD0152A1596258100A76877 /* YMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD015291596258100A76877 /* YMColor.m */; };
-		DAD0152D1596299E00A76877 /* UIColor+YMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD0152C1596299E00A76877 /* UIColor+YMColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA54D5411596A56E0039F16F /* UIColor+YMColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YMColor.h"; sourceTree = "<group>"; };
+		DA54D5421596A56E0039F16F /* UIColor+YMColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YMColor.m"; sourceTree = "<group>"; };
+		DA54D5431596A56E0039F16F /* YMColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMColor.h; sourceTree = "<group>"; };
+		DA54D5441596A56E0039F16F /* YMColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMColor.m; sourceTree = "<group>"; };
 		DAD014FA159612F300A76877 /* YMColorPickerKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMColorPickerKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD014FE159612F300A76877 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DAD01500159612F300A76877 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -28,10 +32,6 @@
 		DAD0150C159612F300A76877 /* YMColorPickerKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YMColorPickerKit-Prefix.pch"; sourceTree = "<group>"; };
 		DAD0150D159612F300A76877 /* YMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAppDelegate.h; sourceTree = "<group>"; };
 		DAD0150E159612F300A76877 /* YMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAppDelegate.m; sourceTree = "<group>"; };
-		DAD015281596258100A76877 /* YMColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMColor.h; sourceTree = "<group>"; };
-		DAD015291596258100A76877 /* YMColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMColor.m; sourceTree = "<group>"; };
-		DAD0152B1596299D00A76877 /* UIColor+YMColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YMColor.h"; sourceTree = "<group>"; };
-		DAD0152C1596299E00A76877 /* UIColor+YMColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YMColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +48,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA54D5401596A56E0039F16F /* YMColorPickerKit */ = {
+			isa = PBXGroup;
+			children = (
+				DA54D5411596A56E0039F16F /* UIColor+YMColor.h */,
+				DA54D5421596A56E0039F16F /* UIColor+YMColor.m */,
+				DA54D5431596A56E0039F16F /* YMColor.h */,
+				DA54D5441596A56E0039F16F /* YMColor.m */,
+			);
+			path = YMColorPickerKit;
+			sourceTree = "<group>";
+		};
 		DAD014EF159612F300A76877 = {
 			isa = PBXGroup;
 			children = (
@@ -78,7 +89,7 @@
 		DAD01504159612F300A76877 /* YMColorPickerKit */ = {
 			isa = PBXGroup;
 			children = (
-				DAD0151515961B3A00A76877 /* YMColorPicker */,
+				DA54D5401596A56E0039F16F /* YMColorPickerKit */,
 				DAD0150D159612F300A76877 /* YMAppDelegate.h */,
 				DAD0150E159612F300A76877 /* YMAppDelegate.m */,
 				DAD01505159612F300A76877 /* Supporting Files */,
@@ -95,17 +106,6 @@
 				DAD0150C159612F300A76877 /* YMColorPickerKit-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DAD0151515961B3A00A76877 /* YMColorPicker */ = {
-			isa = PBXGroup;
-			children = (
-				DAD015281596258100A76877 /* YMColor.h */,
-				DAD015291596258100A76877 /* YMColor.m */,
-				DAD0152B1596299D00A76877 /* UIColor+YMColor.h */,
-				DAD0152C1596299E00A76877 /* UIColor+YMColor.m */,
-			);
-			path = YMColorPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,8 +172,8 @@
 			files = (
 				DAD0150B159612F300A76877 /* main.m in Sources */,
 				DAD0150F159612F300A76877 /* YMAppDelegate.m in Sources */,
-				DAD0152A1596258100A76877 /* YMColor.m in Sources */,
-				DAD0152D1596299E00A76877 /* UIColor+YMColor.m in Sources */,
+				DA54D5451596A56E0039F16F /* UIColor+YMColor.m in Sources */,
+				DA54D5461596A56E0039F16F /* YMColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +277,7 @@
 				DAD01514159612F300A76877 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

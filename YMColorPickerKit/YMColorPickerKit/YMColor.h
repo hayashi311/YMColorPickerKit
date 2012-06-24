@@ -39,6 +39,7 @@ extern "C" {
         float h;
         float s;
         float v;
+        float a;
     } YMHSVAColor;
     
     YMHSVAColor YMHSVAColorMake(float hue,float saturation,float brightness,float alpha);
@@ -50,10 +51,11 @@ extern "C" {
     /////////////////////////////////////////////////////////////////////////////
 #pragma mark - Convert color
     
-    YMHSVAColor HSVColorFromRGBColor(const YMRGBAColor);
-    YMRGBAColor RGBColorFromHSVColor(const YMHSVAColor);
+    YMHSVAColor YMHSVColorFromRGBColor(const YMRGBAColor);
+    YMRGBAColor YMRGBColorFromHSVColor(const YMHSVAColor);
     
-    int HexColorFromRGBColor(const YMRGBAColor*);
+    int YMHexColorFromRGBColor(const YMRGBAColor);
+    int YMHexColorFromRGBAColor(const YMRGBAColor);
     
 #ifdef __cplusplus
 }
