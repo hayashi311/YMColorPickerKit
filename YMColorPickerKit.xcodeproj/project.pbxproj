@@ -11,6 +11,7 @@
 		DA54D5461596A56E0039F16F /* YMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DA54D5441596A56E0039F16F /* YMColor.m */; };
 		DA54D5561596DA5F0039F16F /* YMColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA54D5551596DA5F0039F16F /* YMColorPickerView.m */; };
 		DA54D55A1596DA780039F16F /* YMColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA54D5591596DA780039F16F /* YMColorPickerViewController.m */; };
+		DA8ED03B1596EA4500952611 /* YMColorPickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8ED03A1596EA4500952611 /* YMColorPickerManager.m */; };
 		DAD014FF159612F300A76877 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD014FE159612F300A76877 /* UIKit.framework */; };
 		DAD01501159612F300A76877 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD01500159612F300A76877 /* Foundation.framework */; };
 		DAD01503159612F300A76877 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD01502159612F300A76877 /* CoreGraphics.framework */; };
@@ -28,6 +29,9 @@
 		DA54D5551596DA5F0039F16F /* YMColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMColorPickerView.m; sourceTree = "<group>"; };
 		DA54D5581596DA780039F16F /* YMColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMColorPickerViewController.h; sourceTree = "<group>"; };
 		DA54D5591596DA780039F16F /* YMColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMColorPickerViewController.m; sourceTree = "<group>"; };
+		DA8ED0391596EA4500952611 /* YMColorPickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMColorPickerManager.h; sourceTree = "<group>"; };
+		DA8ED03A1596EA4500952611 /* YMColorPickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMColorPickerManager.m; sourceTree = "<group>"; };
+		DA8ED03E1596F36E00952611 /* YMColorPickerControlProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMColorPickerControlProtocol.h; sourceTree = "<group>"; };
 		DAD014FA159612F300A76877 /* YMColorPickerKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMColorPickerKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD014FE159612F300A76877 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DAD01500159612F300A76877 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,6 +65,9 @@
 				DA54D5421596A56E0039F16F /* UIColor+YMColor.m */,
 				DA54D5431596A56E0039F16F /* YMColor.h */,
 				DA54D5441596A56E0039F16F /* YMColor.m */,
+				DA8ED03E1596F36E00952611 /* YMColorPickerControlProtocol.h */,
+				DA8ED0391596EA4500952611 /* YMColorPickerManager.h */,
+				DA8ED03A1596EA4500952611 /* YMColorPickerManager.m */,
 				DA54D5541596DA5F0039F16F /* YMColorPickerView.h */,
 				DA54D5551596DA5F0039F16F /* YMColorPickerView.m */,
 				DA54D5581596DA780039F16F /* YMColorPickerViewController.h */,
@@ -186,6 +193,7 @@
 				DA54D5461596A56E0039F16F /* YMColor.m in Sources */,
 				DA54D5561596DA5F0039F16F /* YMColorPickerView.m in Sources */,
 				DA54D55A1596DA780039F16F /* YMColorPickerViewController.m in Sources */,
+				DA8ED03B1596EA4500952611 /* YMColorPickerManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

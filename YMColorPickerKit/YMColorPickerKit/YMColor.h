@@ -57,6 +57,16 @@ extern "C" {
     int YMHexColorFromRGBColor(const YMRGBAColor);
     int YMHexColorFromRGBAColor(const YMRGBAColor);
     
+    
+    /////////////////////////////////////////////////////////////////////////////
+    //
+    // Convert color 
+    //
+    /////////////////////////////////////////////////////////////////////////////
+#pragma mark - Convert color
+    
+    bool YMHSVAColorEqualToColor(const YMHSVAColor,const YMHSVAColor);
+    
 #ifdef __cplusplus
 }
 #endif

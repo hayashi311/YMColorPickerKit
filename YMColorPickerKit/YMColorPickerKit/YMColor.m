@@ -169,3 +169,7 @@ int YMHexColorFromRGBAColor(const YMRGBAColor rgba)
     return (int)(rgba.r*255.0f) << 24 | (int)(rgba.g*255.0f) << 16 | (int)(rgba.b*255.0f) << 8 | (int)(rgba.a*255.0f) << 0;
 }
 
+bool YMHSVAColorEqualToColor(const YMHSVAColor hsv1,const YMHSVAColor hsv2)
+{
+    return (hsv1.h == hsv2.h) && (hsv1.s == hsv2.s) && (hsv1.v == hsv2.v) && (hsv1.a == hsv2.a);
+}

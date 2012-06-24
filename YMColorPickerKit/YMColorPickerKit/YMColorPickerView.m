@@ -7,6 +7,13 @@
 //
 
 #import "YMColorPickerView.h"
+#import "YMColorPickerManager.h"
+
+@interface YMColorPickerView() {
+@private
+    YMColorPickerManager* manager_;
+}
+@end
 
 @implementation YMColorPickerView
 
@@ -18,6 +25,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        manager_ = [[YMColorPickerManager alloc] init];
         self.backgroundColor = [UIColor redColor];
     }
     return self;
