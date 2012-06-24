@@ -11,6 +11,7 @@
 #import "UIColor+YMColor.h"
 #import "YMColorInfoView.h"
 #import "YMBrightnessSlider.h"
+#import "YMColorMapView.h"
 
 @interface YMColorPickerView() {
 @private
@@ -30,16 +31,20 @@
     if (self) {
         manager_ = [[YMColorPickerManager alloc] init];
         [manager_ updateHSVAColor:[UIColor greenColor].YMHSVAColor];
-        self.backgroundColor = [UIColor redColor];
+        self.backgroundColor = [UIColor whiteColor];
         
-        YMColorInfoView* infoView = [[YMColorInfoView alloc] initWithFrame:CGRectMake(10.f, 10.f, 30.f, 30.f)];
+        YMColorInfoView* infoView = [[YMColorInfoView alloc] initWithFrame:CGRectMake(10.f, 10.f, 40.f, 40.f)];
         [manager_ addControl:infoView];
         [self addSubview:infoView];
         
         YMBrightnessSlider* brightnessSlider;
-        brightnessSlider = [[YMBrightnessSlider alloc] initWithFrame:CGRectMake(50.f, 10.f, 200.f, 30.f)];
+        brightnessSlider = [[YMBrightnessSlider alloc] initWithFrame:CGRectMake(60.f, 10.f, 250.f, 40.f)];
         [manager_ addControl:brightnessSlider];
         [self addSubview:brightnessSlider];
+        
+        YMColorMapView* colorMapView = [[YMColorMapView alloc] initWithFrame:CGRectMake(10.f, 100.f, 300.f, 300.f)];
+        [manager_ addControl:colorMapView];
+        [self addSubview:colorMapView];
         
     }
     return self;
