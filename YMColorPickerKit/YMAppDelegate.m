@@ -7,6 +7,7 @@
 //
 
 #import "YMAppDelegate.h"
+#import "YMColorPickerViewController.h"
 
 @implementation YMAppDelegate
 
@@ -17,6 +18,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    YMColorPickerViewController* rootViewController;
+    rootViewController = [[YMColorPickerViewController alloc] init];
+    [self.window setRootViewController:rootViewController];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
