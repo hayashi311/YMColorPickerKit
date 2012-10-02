@@ -10,12 +10,15 @@
 #import "HRBrightnessCursor.h"
 #import "YMColorPickerManager.h"
 #import "HRCgUtil.h"
+#import "YMSliderShadowLayer.h"
 
 @interface YMBrightnessSlider() {
 @private
     HRBrightnessCursor* cursor_;
     YMHSVAColor hsva_;
     __weak YMColorPickerManager* manager_;
+    YMSliderShadowLayer* shadowLayer_;
+    
 }
 
 - (void)updateCursorPosition;
@@ -36,13 +39,20 @@
         panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
         [self addGestureRecognizer:panGestureRecognizer];
         self.backgroundColor = [UIColor clearColor];
+        
+        shadowLayer_ = [[YMSliderShadowLayer alloc] initWithLayer:self.layer];
+        [self.layer addSublayer:shadowLayer_];
+        
     }
     return self;
 }
 
 - (void)layoutSubviews
 {
+    [super layoutSubviews];
     [self updateCursorPosition];
+    
+    //shadowLayer_.position = self.layer.position;
 }
 
 - (void)updateCursorPosition

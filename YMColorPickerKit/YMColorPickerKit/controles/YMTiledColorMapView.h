@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YMColorPickerControlProtocol.h"
 
-@interface YMTiledColorMapView : UIView
+@interface YMTiledColorMapView : UIView<YMColorPickerControlProtocol>
 
 @end

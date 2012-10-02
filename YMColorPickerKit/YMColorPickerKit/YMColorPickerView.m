@@ -12,6 +12,7 @@
 #import "YMColorInfoView.h"
 #import "YMBrightnessSlider.h"
 #import "YMColorMapView.h"
+#import "YMTiledColorMapView.h"
 
 @interface YMColorPickerView() {
 @private
@@ -33,16 +34,23 @@
         [manager_ updateHSVAColor:[UIColor greenColor].YMHSVAColor];
         self.backgroundColor = [UIColor whiteColor];
         
-        YMColorInfoView* infoView = [[YMColorInfoView alloc] initWithFrame:CGRectMake(10.f, 10.f, 40.f, 40.f)];
+        YMColorInfoView* infoView = [[YMColorInfoView alloc] initWithFrame:CGRectMake(7.f, 27.f, 96.f, 46.f)];
         [manager_ addControl:infoView];
         [self addSubview:infoView];
         
         YMBrightnessSlider* brightnessSlider;
-        brightnessSlider = [[YMBrightnessSlider alloc] initWithFrame:CGRectMake(60.f, 10.f, 250.f, 40.f)];
+        brightnessSlider = [[YMBrightnessSlider alloc] initWithFrame:CGRectMake(110.f, 30.f, 200.f, 40.f)];
         [manager_ addControl:brightnessSlider];
         [self addSubview:brightnessSlider];
         
-        YMColorMapView* colorMapView = [[YMColorMapView alloc] initWithFrame:CGRectMake(10.f, 100.f, 300.f, 300.f)];
+        /*
+        YMColorMapView* colorMapView = [[YMColorMapView alloc] initWithFrame:CGRectMake(10.f, 106.f, 300.f, 300.f)];
+        [manager_ addControl:colorMapView];
+        [self addSubview:colorMapView];
+        */
+        
+        YMTiledColorMapView* colorMapView;
+        colorMapView = [[YMTiledColorMapView alloc] initWithFrame:CGRectMake(10.f, 106.f, 300.f, 300.f)];
         [manager_ addControl:colorMapView];
         [self addSubview:colorMapView];
         

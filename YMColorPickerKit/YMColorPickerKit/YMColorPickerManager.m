@@ -39,8 +39,9 @@
     hsva_ = hsva;
     for (UIView<YMColorPickerControlProtocol>* control in controles_) {
         if (!YMHSVAColorEqualToColor([control HSVAColor], hsva_)) {
-            [control setHSVAColor:hsva_];
+            
         }
+        [control setHSVAColor:hsva_];
     }
 }
 
